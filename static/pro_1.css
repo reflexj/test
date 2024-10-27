@@ -1,0 +1,139 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Allow the body to use flexbox in column direction */
+    align-items: center; /* Center elements horizontally */
+    min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
+    position: relative; /* Set relative position for footer positioning */
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%; /* Full width */
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Positions it at the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Space for the header in the content */
+body:before {
+    content: '';
+    display: block;
+    height: 80px; /* Adjust based on header height */
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e298b5;
+}
+
+/* Search bar styling */
+[search-bar] {
+    background-color: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Checkout Window Styles */
+.checkout {
+    margin-top: 100px; /* Space below the header */
+    margin: 20px; /* Margin for sides */
+    padding: 40px; /* Increased padding for the checkout box */
+    border: 1px solid #ccc;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Add additional space above the checkout box */
+.checkout {
+    margin-top: 170px; /* Add more space above the checkout */
+}
+
+/* Total price styling */
+.total {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Checkout button styles */
+.checkout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e298b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #d17698;
+  }
+
+
+/* Submit button styling (shared with .go-back-btn) */
+.submit-btn, .go-back-btn { /* Modified line to add .go-back-btn */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e298b5;
+    color: white;
+    text-decoration: none;
+    border: none; /* Adjusted for button element */
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover, .go-back-btn:hover { /* Modified line to add .go-back-btn */
+    background-color: #d17698;
+}
+
+/* Optional: additional margin for spacing between buttons */
+.go-back-btn {
+    margin-top: 10px; /* Space between Submit and Go Back buttons */
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    position: absolute; /* Fix footer at the bottom */
+    bottom: 0; /* Align to the bottom */
+}

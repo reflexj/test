@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Research</title>
+  <link rel="stylesheet" href="css_files/pro_3.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Research</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="checkout" data-price="15">
+    <h2>Research!</h2>
+    <p>Enjoy our premium product for only <span id="price">15</span> CHF.</p>
+    
+    <label for="quantity_pro_3">Select quantity:</label>
+    <select id="quantity_pro_3">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <p class="total">Total Price: <span id="totalPrice_pro_3">15</span> CHF</p>
+
+    <a href="checkout_research.html" class="checkout-button">Continue to Checkout</a>
+    <button type="button" class="submit-btn go-back-btn" onclick="history.back()">Go Back</button> <!-- Modified line -->
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Simple Website. All rights reserved.</p>
+  </footer>
+
+  <script src="js_files/pro_3.js"></script>
+</body>
+</html>

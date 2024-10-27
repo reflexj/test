@@ -1,0 +1,102 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Space for the header in the content */
+body:before {
+    content: '';
+    display: block;
+    height: 80px;
+}
+
+/* Checkout Window Styles */
+.checkout {
+    margin-top: 120px; /* Increased space for header */
+    margin: 20px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative; /* Required for the background layer */
+}
+
+/* Background layer for the checkout section */
+.checkout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.05); /* Light background color */
+    z-index: -1; /* Position it behind the text */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Form input styling */
+.checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Form labels */
+.checkout-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Submit button styling */
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #e298b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d17698;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+
