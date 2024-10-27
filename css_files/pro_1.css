@@ -100,6 +100,32 @@ nav ul li a:hover {
     background-color: #d17698;
   }
 
+
+.submit-btn, .go-back-btn 
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e298b5;
+    color: white;
+    text-decoration: none;
+    border: none; /* Adjusted for button element */
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover, .go-back-btn:hover 
+    background-color: #d17698;
+}
+
+
+.go-back-btn {
+    margin-top: 10px; /* Space between Submit and Go Back buttons */
+}
+
+
+
 /* Footer styling */
 footer {
     background-color: #333;
