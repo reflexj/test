@@ -101,7 +101,8 @@ nav ul li a:hover {
   }
 
 
-.submit-btn, .go-back-btn 
+/* Submit button styling (shared with .go-back-btn) */
+.submit-btn, .go-back-btn { /* Modified line to add .go-back-btn */
     display: inline-block;
     padding: 10px 20px;
     background-color: #e298b5;
@@ -115,15 +116,14 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover, .go-back-btn:hover 
+.submit-btn:hover, .go-back-btn:hover { /* Modified line to add .go-back-btn */
     background-color: #d17698;
 }
 
-
+/* Optional: additional margin for spacing between buttons */
 .go-back-btn {
     margin-top: 10px; /* Space between Submit and Go Back buttons */
 }
-
 
 
 /* Footer styling */
