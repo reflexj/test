@@ -9,7 +9,7 @@ const eventItems = document.querySelectorAll('[data-shop] li');
 
 
 searchBar.addEventListener('input', function() {
-  const searchTerm = searchBar.value.toLowerCase(); e
+  const searchTerm = searchBar.value.toLowerCase(); 
   
   
   eventItems.forEach(item => {
