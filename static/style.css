@@ -42,7 +42,7 @@ nav ul li a:hover {
 }
 
 /* Search bar styling */
-[search-bar] {
+[data-search-bar] {
   background-color: #333;
   padding: 1em 0;
   text-align: center;
@@ -73,7 +73,7 @@ button:hover {
 }
 
 /* Content styling */
-[data-name] li a {
+[data-name="product-list"] li a {
   font-size: 1.2em;
   color: #ffffff;
   text-decoration: none;
@@ -83,12 +83,12 @@ button:hover {
   transition: color 0.3s ease;
 }
 
-[data-name] li a:hover {
+[data-name="product-list"] li a:hover {
   color: #e298b5;
 }
 
 /* Container styling for product names */
-[data-name] {
+[data-name="product-list"] {
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
@@ -97,7 +97,7 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-[data-name] li {
+[data-name="product-list"] li {
   list-style: none;
   flex: 1;
   margin: 0 10px;
@@ -188,7 +188,7 @@ footer {
   }
 
   /* Section and content padding adjustments */
-  section, [data-name] {
+  section, [data-name="product-list"] {
     padding: 1em;
   }
 }
@@ -205,12 +205,12 @@ footer {
   }
 
   /* Stack content items vertically for small screens */
-  [data-name] {
+  [data-name="product-list"] {
     flex-direction: column;
     align-items: center;
   }
 
-  [data-name] li {
+  [data-name="product-list"] li {
     margin: 10px 0;
     flex: none;
     width: 100%; /* Make each list item take full width */
