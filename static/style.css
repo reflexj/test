@@ -1,0 +1,218 @@
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #ffffff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation bar styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e298b5;
+}
+
+/* Search bar styling */
+[search-bar] {
+  background-color: #333;
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* Section styling */
+section {
+  background-color: white;
+  padding: 1.5em;
+  margin: 1em 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+button:hover {
+  background-color: #e298b5;
+  transform: scale(1.2);
+}
+
+/* Content styling */
+[data-name] li a {
+  font-size: 1.2em;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+[data-name] li a:hover {
+  color: #e298b5;
+}
+
+/* Container styling for product names */
+[data-name] {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+[data-name] li {
+  list-style: none;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.pro_2, .pro_1, .pro_3 {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+/* Image grid container styling */
+.image-grid {
+  display: grid;
+  gap: 16px; /* Space between images */
+  padding: 1em;
+}
+
+/* Full-screen (large screens): 3 columns */
+@media (min-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (smartphones): 1 column */
+@media (max-width: 599px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Base styling for images */
+.product-image {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Basic styling for the body and html to ensure full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content section styling should take up available space */
+main {
+  flex: 1;
+  padding: 2em;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Responsive styling for medium screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  /* Navigation bar stacking vertically */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Section and content padding adjustments */
+  section, [data-name] {
+    padding: 1em;
+  }
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Adjust button size */
+  button {
+    padding: 8px 16px;
+  }
+
+  /* Stack content items vertically for small screens */
+  [data-name] {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  [data-name] li {
+    margin: 10px 0;
+    flex: none;
+    width: 100%; /* Make each list item take full width */
+  }
+}
